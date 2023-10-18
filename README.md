@@ -2,6 +2,10 @@ Pandas is a Python library.
 
 Pandas is used to analyze data.
 
+# Pandas User Guide
+
+https://pandas.pydata.org/docs/user_guide/index.html
+
 Pandas is an open-source data manipulation and analysis library for Python. It provides data structures and functions needed to work with structured data efficiently. Pandas is a powerful tool for data cleaning, exploration, and analysis, making it a popular choice for data scientists, analysts, and researchers.
 
 Key components and features of Pandas include:
@@ -35,22 +39,22 @@ python
 
 import pandas as pd
 
-# Read a CSV file into a DataFrame
+### Read a CSV file into a DataFrame
 df = pd.read_csv('data.csv')
 
-# Display the first few rows of the DataFrame
+### Display the first few rows of the DataFrame
 print(df.head())
 
-# Calculate summary statistics
+### Calculate summary statistics
 print(df.describe())
 
-# Select and filter data
+### Select and filter data
 filtered_data = df[df['Age'] > 30]
 
-# Group and aggregate data
+### Group and aggregate data
 grouped_data = df.groupby('Gender')['Salary'].mean()
 
-# Plotting (requires Matplotlib or other visualization libraries)
+### Plotting (requires Matplotlib or other visualization libraries)
 df['Age'].plot(kind='hist')
 
 Pandas simplifies and streamlines the process of working with data in Python, making it an essential library for data analysis and manipulation. It's widely used in data science, machine learning, and data analytics projects.
